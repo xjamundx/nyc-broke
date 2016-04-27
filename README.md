@@ -1,4 +1,12 @@
-Trying to reproduce my broken `nyc` setup:
+There is an issue with `nyc` when using `ava` and `babel-register`.
+
+It seems to only pop up when you have both destructuring and binary expressions as part of the same varabile declaration.
+
+Example code:
+
+```
+var {a} = true && {}
+```
 
 ## Test
 
