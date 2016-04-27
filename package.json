@@ -4,7 +4,7 @@
   "description": "testing some broken ava stuff",
   "main": "feedback.test.js",
   "scripts": {
-    "test": "nyc ava index.js"
+    "test": "nyc --reporter html ava index.js"
   },
   "author": "",
   "license": "ISC",
